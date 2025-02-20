@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Nahapet93\FedexRestPhpSdk\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FedexRestPhpSdkCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'fedex-rest-php-sdk';
 
     public $description = 'My command';
 
