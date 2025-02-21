@@ -15,7 +15,7 @@ class WeightPayload implements PayloadContract
     {
         return [
             'units' => $this->units,
-            'value' => $this->value
+            'value' => $this->value,
         ];
     }
 }

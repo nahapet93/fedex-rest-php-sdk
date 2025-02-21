@@ -2,7 +2,4 @@
 
 namespace SmartDato\FedexRestPhpSdk\Enums;
 
-enum B13AFilingOptionEnum
-{
-
-}
+enum B13AFilingOptionEnum {}

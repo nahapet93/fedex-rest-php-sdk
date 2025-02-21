@@ -15,7 +15,7 @@ class ValuePayload implements PayloadContract
     {
         return [
             'amount' => $this->amount,
-            'currency' => $this->currency
+            'currency' => $this->currency,
         ];
     }
 }

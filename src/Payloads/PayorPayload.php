@@ -19,7 +19,7 @@ class PayorPayload implements PayloadContract
                 'accountNumber' => $this->accountNumber,
                 'contact' => $this->contact->build(),
                 'address' => $this->address->build(),
-            ]
+            ],
         ];
     }
 }

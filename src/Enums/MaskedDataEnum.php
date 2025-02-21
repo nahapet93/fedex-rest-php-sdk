@@ -2,7 +2,4 @@
 
 namespace SmartDato\FedexRestPhpSdk\Enums;
 
-enum MaskedDataEnum
-{
-
-}
+enum MaskedDataEnum {}
