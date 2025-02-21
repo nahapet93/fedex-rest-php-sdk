@@ -14,17 +14,16 @@ class ShipmentPayload implements PayloadContract
         protected string $packagingType, // YOUR_PACKAGING
         protected float $totalWeight,
         protected float $weight,
-        protected ?TotalDeclaredValuePayload $totalDeclaredValue,
+        protected ?ValuePayload $totalDeclaredValue,
         protected ShipperPayload $shipper,
         protected array $recipients, /** @var RecipientPayload[] $recipients */
-        protected ShippingChargesPaymentPayload $shippingChargesPayment,
+        protected PaymentPayload $shippingChargesPayment,
         protected ?CustomsClearanceDetailPayload $customsClearanceDetail,
         protected LabelSpecificationPayload $labelSpecification,
         protected CustomerSpecifiedDetailPayload $customerSpecifiedDetail,
         protected int $totalPackageCount,
         protected array $requestedPackageLineItems, /** @var RequestedPackageLineItemsPayload[] $requestedPackageLineItems */
-        protected ?array $customerReferences, /** @var CustomerReferencePayload[] $customerReferences */
-        protected ?PackageSpecialServicesPayload $packageSpecialServices,
+        protected ?ShipmentSpecialServicesPayload $shipmentSpecialServices,
     ) {}
 
     public function build(): array

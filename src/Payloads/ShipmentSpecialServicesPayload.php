@@ -4,7 +4,7 @@ namespace SmartDato\FedexRestPhpSdk\Payloads;
 
 use SmartDato\FedexRestPhpSdk\Contracts\PayloadContract;
 
-class PackageSpecialServicesPayload implements PayloadContract
+class ShipmentSpecialServicesPayload implements PayloadContract
 {
     public function __construct(
     ) {}

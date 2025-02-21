@@ -4,18 +4,18 @@ namespace SmartDato\FedexRestPhpSdk\Payloads;
 
 use SmartDato\FedexRestPhpSdk\Contracts\PayloadContract;
 
-class ShipperPayload implements PayloadContract
+class ValuePayload implements PayloadContract
 {
     public function __construct(
-        protected ContactPayload $contact,
-        protected AddressPayload $address,
+        protected string $currency,
+        protected float $amount
     ) {}
 
     public function build(): array
     {
         return [
-            'contact' => $this->contact->build(),
-            'address' => $this->address->build(),
+            'amount' => $this->amount,
+            'currency' => $this->currency
         ];
     }
 }
