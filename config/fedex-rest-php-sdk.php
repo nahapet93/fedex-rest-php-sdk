@@ -1,6 +1,6 @@
 <?php
 
-// config for Nahapet93/FedexRestPhpSdk
+// config for SmartDato/FedexRestPhpSdk
 return [
 
 ];

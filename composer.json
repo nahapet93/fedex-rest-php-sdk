@@ -1,8 +1,8 @@
 {
-    "name": "nahapet93/fedex-rest-php-sdk",
+    "name": "smart-dato/fedex-rest-php-sdk",
     "description": "This is my package fedex-rest-php-sdk",
     "keywords": [
-        "nahapet93",
+        "smart-dato",
         "laravel",
         "fedex-rest-php-sdk"
     ],
@@ -10,38 +10,37 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "nahapet93",
-            "email": "nahapet.nahapetyan@naghashyan.com",
+            "name": "SmartDato",
+            "email": "info@smart-dato.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
-        "larastan/larastan": "^2.9||^3.0",
+        "larastan/larastan": "^2.9",
         "orchestra/testbench": "^9.0.0||^8.22.0",
-        "pestphp/pest": "^3.0",
-        "pestphp/pest-plugin-arch": "^3.0",
-        "pestphp/pest-plugin-laravel": "^3.0",
-        "phpstan/extension-installer": "^1.3||^2.0",
-        "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
-        "phpstan/phpstan-phpunit": "^1.3||^2.0",
-        "spatie/laravel-ray": "^1.35"
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-arch": "^2.7",
+        "pestphp/pest-plugin-laravel": "^2.3",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-phpunit": "^1.3"
     },
     "autoload": {
         "psr-4": {
-            "Nahapet93\\FedexRestPhpSdk\\": "src/",
-            "Nahapet93\\FedexRestPhpSdk\\Database\\Factories\\": "database/factories/"
+            "SmartDato\\FedexRestPhpSdk\\": "src/",
+            "SmartDato\\FedexRestPhpSdk\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Nahapet93\\FedexRestPhpSdk\\Tests\\": "tests/",
+            "SmartDato\\FedexRestPhpSdk\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nahapet93\\FedexRestPhpSdk\\FedexRestPhpSdkServiceProvider"
+                "SmartDato\\FedexRestPhpSdk\\FedexRestPhpSdkServiceProvider"
             ],
             "aliases": {
-                "FedexRestPhpSdk": "Nahapet93\\FedexRestPhpSdk\\Facades\\FedexRestPhpSdk"
+                "FedexRestPhpSdk": "SmartDato\\FedexRestPhpSdk\\Facades\\FedexRestPhpSdk"
             }
         }
     },

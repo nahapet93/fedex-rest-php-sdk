@@ -1,10 +1,10 @@
 <?php
 
-namespace Nahapet93\FedexRestPhpSdk\Tests;
+namespace SmartDato\FedexRestPhpSdk\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Nahapet93\FedexRestPhpSdk\FedexRestPhpSdkServiceProvider;
+use SmartDato\FedexRestPhpSdk\FedexRestPhpSdkServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Nahapet93\\FedexRestPhpSdk\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'SmartDato\\FedexRestPhpSdk\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

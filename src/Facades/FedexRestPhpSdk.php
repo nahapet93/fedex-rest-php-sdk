@@ -1,16 +1,16 @@
 <?php
 
-namespace Nahapet93\FedexRestPhpSdk\Facades;
+namespace SmartDato\FedexRestPhpSdk\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Nahapet93\FedexRestPhpSdk\FedexRestPhpSdk
+ * @see \SmartDato\FedexRestPhpSdk\FedexRestPhpSdk
  */
 class FedexRestPhpSdk extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Nahapet93\FedexRestPhpSdk\FedexRestPhpSdk::class;
+        return \SmartDato\FedexRestPhpSdk\FedexRestPhpSdk::class;
     }
 }

@@ -1,5 +1,5 @@
 <?php
 
-namespace Nahapet93\FedexRestPhpSdk;
+namespace SmartDato\FedexRestPhpSdk;
 
 class FedexRestPhpSdk {}

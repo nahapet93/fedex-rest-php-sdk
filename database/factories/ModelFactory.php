@@ -1,6 +1,6 @@
 <?php
 
-namespace Nahapet93\FedexRestPhpSdk\Database\Factories;
+namespace SmartDato\FedexRestPhpSdk\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
