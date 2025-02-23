@@ -41,7 +41,7 @@ class FedexRestPhpSdk
             'labelResponseOptions' => $this->labelResponseOptions->value,
             'accountNumber' => [
                 'value' => $this->accountNumber,
-            ]
+            ],
         ];
     }
 }

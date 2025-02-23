@@ -17,7 +17,7 @@ class PayorPayload implements PayloadContract
         return [
             'responsibleParty' => [
                 'accountNumber' => [
-                    'value' => $this->accountNumber
+                    'value' => $this->accountNumber,
                 ],
                 'contact' => $this->contact->build(),
                 'address' => $this->address->build(),

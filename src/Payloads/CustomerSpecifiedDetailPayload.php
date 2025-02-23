@@ -17,7 +17,7 @@ class CustomerSpecifiedDetailPayload implements PayloadContract
             'maskedData' => array_map(
                 fn (MaskedDataEnum $maskedData) => $maskedData->value,
                 $this->maskedData,
-            )
+            ),
         ];
     }
 }

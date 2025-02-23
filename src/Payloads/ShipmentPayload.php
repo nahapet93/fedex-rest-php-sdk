@@ -25,6 +25,7 @@ class ShipmentPayload implements PayloadContract
         protected array $requestedPackageLineItems, /** @var RequestedPackageLineItemPayload[] $requestedPackageLineItems */
         protected ?ShipmentSpecialServicesPayload $shipmentSpecialServices,
     ) {}
+
     public function build(): array
     {
         $payload = [

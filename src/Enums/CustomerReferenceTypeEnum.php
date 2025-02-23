@@ -2,7 +2,8 @@
 
 namespace SmartDato\FedexRestPhpSdk\Enums;
 
-enum CustomerReferenceTypeEnum: string {
+enum CustomerReferenceTypeEnum: string
+{
     case CUSTOMER_REFERENCE = 'CUSTOMER_REFERENCE';
     case DEPARTMENT_NUMBER = 'DEPARTMENT_NUMBER';
     case INVOICE_NUMBER = 'INVOICE_NUMBER';

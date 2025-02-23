@@ -2,7 +2,8 @@
 
 namespace SmartDato\FedexRestPhpSdk\Enums;
 
-enum B13AFilingOptionEnum: string {
+enum B13AFilingOptionEnum: string
+{
     case NOT_REQUIRED = 'NOT_REQUIRED';
     case MANUALLY_ATTACHED = 'MANUALLY_ATTACHED';
     case FILED_ELECTRONICALLY = 'FILED_ELECTRONICALLY';
