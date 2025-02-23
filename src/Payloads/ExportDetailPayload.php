@@ -3,17 +3,18 @@
 namespace SmartDato\FedexRestPhpSdk\Payloads;
 
 use SmartDato\FedexRestPhpSdk\Contracts\PayloadContract;
+use SmartDato\FedexRestPhpSdk\Enums\B13AFilingOptionEnum;
 
 class ExportDetailPayload implements PayloadContract
 {
     public function __construct(
-        protected string $b13AFilingOption,
+        protected B13AFilingOptionEnum $b13AFilingOption,
     ) {}
 
     public function build(): array
     {
         return [
-            'b13AFilingOption' => $this->b13AFilingOption,
+            'b13AFilingOption' => $this->b13AFilingOption->value,
         ];
     }
 }

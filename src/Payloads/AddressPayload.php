@@ -3,6 +3,7 @@
 namespace SmartDato\FedexRestPhpSdk\Payloads;
 
 use SmartDato\FedexRestPhpSdk\Contracts\PayloadContract;
+use SmartDato\FedexRestPhpSdk\Enums\CountryEnum;
 
 class AddressPayload implements PayloadContract
 {
@@ -11,7 +12,7 @@ class AddressPayload implements PayloadContract
         protected string $city,
         protected ?string $stateOrProvinceCode,
         protected ?string $postalCode,
-        protected string $countryCode,
+        protected CountryEnum $countryCode,
         protected ?bool $residential,
     ) {}
 
@@ -20,7 +21,7 @@ class AddressPayload implements PayloadContract
         $payload = [
             'streetLines' => $this->streetLines,
             'city' => $this->city,
-            'countryCode' => $this->countryCode,
+            'countryCode' => $this->countryCode->value,
         ];
 
         if (! empty($this->stateOrProvinceCode)) {

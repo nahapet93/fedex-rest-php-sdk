@@ -3,6 +3,8 @@
 namespace SmartDato\FedexRestPhpSdk\Payloads;
 
 use SmartDato\FedexRestPhpSdk\Contracts\PayloadContract;
+use SmartDato\FedexRestPhpSdk\Enums\CountryEnum;
+use SmartDato\FedexRestPhpSdk\Enums\QuantityUnitEnum;
 
 class CommodityPayload implements PayloadContract
 {
@@ -10,10 +12,10 @@ class CommodityPayload implements PayloadContract
         protected ?int $numberOfPieces,
         protected ?string $exportLicenseNumber,
         protected ?string $description,
-        protected ?string $countryOfManufacture,
+        protected ?CountryEnum $countryOfManufacture,
         protected ?WeightPayload $weight,
         protected ?int $quantity,
-        protected ?string $quantityUnits,
+        protected ?QuantityUnitEnum $quantityUnits,
         protected ?ValuePayload $unitPrice,
         protected ?ValuePayload $customsValue,
     ) {}
@@ -37,7 +39,7 @@ class CommodityPayload implements PayloadContract
         }
 
         if (! empty($this->countryOfManufacture)) {
-            $payload['countryOfManufacture'] = $this->countryOfManufacture;
+            $payload['countryOfManufacture'] = $this->countryOfManufacture->value;
         }
 
         if (! empty($this->weight)) {
@@ -49,7 +51,7 @@ class CommodityPayload implements PayloadContract
         }
 
         if (! empty($this->quantityUnits)) {
-            $payload['quantityUnits'] = $this->quantityUnits;
+            $payload['quantityUnits'] = $this->quantityUnits->value;
         }
 
         if (! empty($this->unitPrice)) {

@@ -2,4 +2,7 @@
 
 namespace SmartDato\FedexRestPhpSdk\Enums;
 
-enum WeightUnitEnum {}
+enum WeightUnitEnum: string {
+    case KG = 'KG';
+    case LB = 'LB';
+}
